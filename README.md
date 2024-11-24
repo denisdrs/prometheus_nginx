@@ -1,6 +1,6 @@
 # Documentação do Projeto: Monitoramento com Prometheus e Grafana
 
-Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**, **Grafana** e o **Nginx Prometheus Exporter**. O objetivo é coletar e visualizar métricas do servidor Nginx, como quantidade de usuários ativos e número de requisições. Aqui estão os detalhes dos endpoints e como eles interagem dentro da arquitetura.
+Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**, **Grafana** e o **Nginx Prometheus Exporter**. O objetivo é coletar e visualizar métricas do servidor Nginx, como quantidade de usuários ativos e número de requisições.
 
 ## Endpoints e Funções
 
@@ -12,7 +12,7 @@ Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**,
     - Conexões ativas
     - Total de requisições processadas
     - Conexões em estados específicos (aceitas, aguardando, etc.)
-- **Relação**: Este serviço é o núcleo da aplicação, sendo monitorado diretamente pelo **Nginx Prometheus Exporter**.
+- **Obs**: Este serviço é o núcleo da aplicação, sendo monitorado diretamente pelo **Nginx Prometheus Exporter**.
 
 ### 2. **Nginx Prometheus Exporter** (`http://localhost:9113`)
 - **Função**: Exportar as métricas do Nginx para o Prometheus em formato compatível.
@@ -22,7 +22,7 @@ Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**,
       - `nginx_connections_active`: Número de conexões ativas.
       - `nginx_http_requests_total`: Total de requisições processadas.
       - `nginx_connections_accepted`: Total de conexões aceitas.
-- **Relação**: Este serviço atua como um intermediário, transformando as métricas do Nginx em um formato que o Prometheus possa coletar e armazenar.
+- **Obs**: Este serviço atua como um intermediário, transformando as métricas do Nginx em um formato que o Prometheus possa coletar e armazenar.
 
 ### 3. **Prometheus** (`http://localhost:9090`)
 - **Função**: Coletar e armazenar as métricas de diversos serviços, incluindo o **Nginx Prometheus Exporter**.
@@ -39,7 +39,7 @@ Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**,
 - **Configuração**:
   - Configurado para se conectar ao Prometheus como fonte de dados.
   - Dashboards personalizados podem ser criados para exibir métricas do Nginx, como conexões ativas e número de requisições por segundo.
-- **Relação**: É a camada de apresentação que permite visualizar e interpretar as métricas coletadas pelo Prometheus.
+- **Obs**: É a camada de apresentação que permite visualizar e interpretar as métricas coletadas pelo Prometheus.
 
 ## Fluxo de Dados
 ![Descrição do GIF](https://media.giphy.com/media/7F7bjODRXzGj3UptzQ/giphy.gif)
