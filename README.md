@@ -54,20 +54,8 @@ Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**,
 - **Prometheus**: Centraliza as métricas e fornece dados para o Grafana.
 - **Grafana**: Visualiza e analisa as métricas.
 
-## Configuração
-1. Certifique-se de ter todos os arquivos necessários:
-   - `Dockerfile`: Configura a imagem do Nginx.
-   - `nginx.conf`: Configuração personalizada do Nginx.
-   - `page.html`: Página servida pelo Nginx.
-   - `prometheus.yml`: Configuração do Prometheus para monitorar o Exporter.
-   - `docker-compose.yml`: Orquestra todos os serviços.
 
-2. Inicie os serviços com:
-   ```bash
-   docker-compose up -d
-   ```
-
-3. Acesse os endpoints nas seguintes URLs:
+## Acesse os endpoints nas seguintes URLs:
    - Nginx: [http://localhost:8080](http://localhost:8080)
    - Prometheus: [http://localhost:9090](http://localhost:9090)
    - Grafana: [http://localhost:3000](http://localhost:3000)
@@ -75,8 +63,11 @@ Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**,
 
 
 
-- Configure alertas no Prometheus para monitorar situações críticas, como aumento inesperado no número de conexões.
+- Objetivo: Monitorar situações críticas, como aumento inesperado no número de conexões.
 
 ---
 
-Este projeto fornece uma arquitetura básica de monitoramento para aplicações baseadas em Nginx. Sinta-se à vontade para expandir a solução, adicionando
+Projeto simples com foco em apredizado de uma arquitetura basica do Prometheus.
+## Autores
+
+- [@denisdrs](https://www.github.com/denisdrs)
