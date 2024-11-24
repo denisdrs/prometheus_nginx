@@ -4,10 +4,10 @@ Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**,
 
 ## Endpoints e Funções
 
-### 1. **Nginx** (`http://localhost:80`)
-- **Função**: Servir uma página HTML (definida pelo arquivo `page.html`) e expor métricas via `/stub_status`.
+### 1. **Nginx** (`http://localhost:8080`)
+- **Função**: Servir uma página HTML (definida pelo arquivo `index.html`) e expor métricas via `/stub_status`.
 - **Endpoint Principal**:
-  - `http://localhost:80`: Página principal, exibindo o conteúdo do `page.html`.
+  - `http://localhost:80`: Página principal, exibindo o conteúdo do `index.html`.
   - `http://localhost:80/stub_status`: Exposição das métricas nativas do Nginx, como:
     - Conexões ativas
     - Total de requisições processadas
