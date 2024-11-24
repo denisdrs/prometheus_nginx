@@ -42,6 +42,7 @@ Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**,
 - **Relação**: É a camada de apresentação que permite visualizar e interpretar as métricas coletadas pelo Prometheus.
 
 ## Fluxo de Dados
+![Descrição do GIF](https://media.giphy.com/media/7F7bjODRXzGj3UptzQ/giphy.gif)
 1. O **Nginx** expõe métricas nativas via o endpoint `/stub_status`.
 2. O **Nginx Prometheus Exporter** coleta essas métricas e as transforma em um formato compatível com o **Prometheus**.
 3. O **Prometheus** coleta e armazena as métricas do Exporter.
