@@ -67,16 +67,13 @@ Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**,
    ```
 
 3. Acesse os endpoints nas seguintes URLs:
-   - Nginx: [http://localhost:80](http://localhost:80)
+   - Nginx: [http://localhost:8080](http://localhost:8080)
    - Prometheus: [http://localhost:9090](http://localhost:9090)
    - Grafana: [http://localhost:3000](http://localhost:3000)
 
-## Persistência de Dados
-- As métricas do Prometheus são armazenadas no volume `prom-data`.
-- As configurações e dados do Grafana são armazenados no volume `gf-data`.
 
-## Próximos Passos
-- Crie dashboards no Grafana para visualizar as métricas do Nginx.
+
+
 - Configure alertas no Prometheus para monitorar situações críticas, como aumento inesperado no número de conexões.
 
 ---
