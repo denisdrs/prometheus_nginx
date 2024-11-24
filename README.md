@@ -59,6 +59,7 @@ Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**,
    - Nginx: [http://localhost:8080](http://localhost:8080)
    - Prometheus: [http://localhost:9090](http://localhost:9090)
    - Grafana: [http://localhost:3000](http://localhost:3000)
+   - Exporter: [http://localhost:9113/metrics](http://localhost:9113/metrics)
 
 
 
