@@ -42,7 +42,7 @@ Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**,
 - **Obs**: É a camada de apresentação que permite visualizar e interpretar as métricas coletadas pelo Prometheus.
 
 ## Fluxo de Dados
-![Descrição do GIF](https://media.giphy.com/media/7F7bjODRXzGj3UptzQ/giphy.gif)
+![Descrição do GIF]([https://media.giphy.com/media/7F7bjODRXzGj3UptzQ/giphy.gif](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmpybmlibTlsNHJnbjJ3N2N0YXhicWpsZndxa254NXhxcGozeW1layZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oBzFPN2ArU5miSZX9Z/giphy.gif))
 1. O **Nginx** expõe métricas nativas via o endpoint `/stub_status`.
 2. O **Nginx Prometheus Exporter** coleta essas métricas e as transforma em um formato compatível com o **Prometheus**.
 3. O **Prometheus** coleta e armazena as métricas do Exporter.
