@@ -1,4 +1,4 @@
-# Documentação do Projeto: Monitoramento com Prometheus e Grafana
+# Monitoramento com Prometheus e Grafana
 
 Este projeto implementa uma arquitetura de monitoramento usando  **Prometheus**, **Grafana** e o **Nginx Prometheus Exporter**. O objetivo é coletar e visualizar métricas do servidor Nginx, como quantidade de usuários ativos e número de requisições.
 
