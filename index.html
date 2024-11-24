@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versão 6.0</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            background: linear-gradient(135deg, #1c1c1e, #27272a);
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Estilos dos Ícones */
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .icons img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s;
+        }
+
+        .icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Cabeçalho e Rodapé */
+        header, footer {
+            background-color: #1f1f23;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before, footer::before {
+            content: '';
+            position: absolute;
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle, #4f4fed, #27272a);
+            top: -70%;
+            left: -25%;
+            transform: rotate(25deg);
+            opacity: 0.2;
+            filter: blur(100px);
+        }
+        
+        h1, h2 {
+            color: #e5e5e7;
+            font-weight: bold;
+        }
+        
+        p {
+            color: #b0b0b3;
+            font-size: 1.1em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Layout da Página */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .content {
+            background-color: #2a2a2f;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            margin-top: 40px;
+        }
+        
+        .content:hover {
+            transform: translateY(-10px);
+        }
+        
+        /* Rodapé */
+        footer {
+            padding: 40px 20px;
+            color: #777;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .icons img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Boas Práticas de DevOps | 6.0</h1>
+    <p>Implemente uma abordagem unificada para automação, CI/CD e infraestrutura como código</p>
+    
+    <!-- Ícones de Terraform, Linux e Docker -->
+    <div class="icons">
+        <img src="https://img.icons8.com/color/48/000000/terraform.png" alt="Ícone do Terraform">
+        <img src="https://img.icons8.com/color/48/000000/linux.png" alt="Ícone do Linux">
+        <img src="https://img.icons8.com/color/48/000000/docker.png" alt="Ícone do Docker">
+        <img src="https://img.icons8.com/color/48/000000/jenkins.png" alt="Ícone do Jenkins">
+        <img src="https://img.icons8.com/color/48/000000/amazon-web-services.png" alt="Ícone da AWS">
+    </div>
+</header>
+
+<section class="container" id="mais-info">
+    <div class="content">
+        <h2>Automatização e Infraestrutura como Código</h2>
+        <p>
+            DevOps é uma metodologia que une desenvolvimento e operações, permitindo ciclos de desenvolvimento mais rápidos e confiáveis. 
+            Entre as principais práticas, destacam-se a automação e o uso de Infraestrutura como Código (IaC), facilitando o gerenciamento e escalabilidade dos ambientes.
+        </p>
+    </div>
+    
+    <div class="content">
+        <h2>CI/CD - Integração e Entrega Contínuas</h2>
+        <p>
+            Implementar pipelines de CI/CD é essencial para um fluxo de trabalho DevOps eficiente. Esse processo assegura que o código seja testado e integrado de forma contínua, 
+            proporcionando entregas mais rápidas e com menos erros.
+        </p>
+    </div>
+
+    <div class="content">
+        <h2>Monitoramento e Observabilidade</h2>
+        <p>
+            Monitoramento é uma prática fundamental em DevOps, permitindo que a equipe tenha visibilidade sobre a saúde dos serviços e identifique problemas rapidamente.
+            A observabilidade é a capacidade de entender o estado interno dos sistemas com base em seus outputs, como logs, métricas e rastreamento.
+        </p>
+    </div>
+
+    <div class="content">
+        <h2>Segurança Integrada ao Ciclo DevOps</h2>
+        <p>
+            DevSecOps é a prática de incorporar segurança em todas as etapas do ciclo de desenvolvimento. Isso garante que as vulnerabilidades sejam identificadas e resolvidas 
+            rapidamente, aumentando a confiabilidade dos serviços.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 - Guia de Boas Práticas DevOps. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
